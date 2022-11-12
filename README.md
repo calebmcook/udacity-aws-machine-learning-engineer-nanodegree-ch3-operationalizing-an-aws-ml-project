@@ -10,8 +10,10 @@ Before you run these files, you'll have to create and open a Sagemaker instance.
 Note: For this project, you should perform all of the Sagemaker steps using Sagemaker itself, not Sagemaker Studio.
 Sagemaker Dashboard screenshots
 
-##Justification
+## Justification
 I chose an ml.t3.xlarge, because I encountered a memory insufficiency error using ml.t3.medium (to save costs). Per docs https://docs.aws.amazon.com/sagemaker/latest/dg/howitworks-create-ws.html, if more memory is needed, recommend large or xlarge.
+
+![sm-notebook-instance.png](sm-notebook-instance.png)
 
 # Download data to an S3 bucket
 The first three cells of the train_and_deploy-solution.ipynb will download data to your AWS workspace. The third cell copies the data to an S3 bucket. You need to set up an S3 bucket that you can copy the data to.
